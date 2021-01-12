@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./node_modules/socket.io/client-dist/socket.io.js"></script>
+</head>
+<body>
+    <input type="text" id="mes">
+    <button id="jian"></button>
+    <script>
+        var socket = io.connect('http://192.168.1.4:3000');
+        document.getElementById('jian')
+        .addEventListener('click',()=>{
+        var mes1 = mes.value;
+        socket.emit('receive',mes1);
+        mes.value = '';
+        })
+        socket.on('message',(mes)=>{
+            console.log(mes);
+        })
+    </script>
+</body>
+</html>

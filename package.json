@@ -1,0 +1,27 @@
+{
+  "name": "jian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jian": "gulp -v",
+    "test": "cross-env NODE_ENV=development node test.js",
+    "build": "echo $npm_package_jian_shuai"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "socket.io": "^3.0.5",
+    "ws": "^7.4.2"
+  },
+  "jian": {
+    "shuai": "很帅"
+  }
+}
